@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Cause della Prima Guerra Mondiale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STILE CSS -->
+  <style>
+    /* ===== BASE ===== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #eef1f4;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: #1f2a44;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 25%;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      color: #1f2a44;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #1b6d85;
+      font-weight: 600;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== CONTENUTO ===== */
+    .content {
+      width: 75%;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content h2 {
+      color: #1f2a44;
+      margin-top: 30px;
+    }
+
+    .content p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .content ul {
+      margin-left: 20px;
+    }
+
+    .content li {
+      margin-bottom: 8px;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar,
+      .content {
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Le Cause della Prima Guerra Mondiale</h1>
+    <p>Europa alla vigilia del conflitto (1914)</p>
+  </header>
+
+  <!-- CONTENUTO PRINCIPALE -->
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Indice</h3>
+      <ul>
+	     <li><a href="index.html">Home</a></li>
+        <li><a href="#nazionalismo">Nazionalismo</a></li>
+        <li><a href="#imperialismo">Imperialismo</a></li>
+        <li><a href="#armamenti">Corsa agli armamenti</a></li>
+        <li><a href="#alleanze">Sistema di alleanze</a></li>
+        <li><a href="#scatenante">Evento scatenante</a></li>
+      </ul>
+    </aside>
+
+    <!-- TESTO -->
+    <main class="content">
+
+      <h2 id="nazionalismo">Nazionalismo</h2>
+      <p>
+        Il nazionalismo fu una delle principali cause della Prima Guerra Mondiale.
+        Molti popoli europei volevano l’indipendenza o l’unione con la propria nazione,
+        soprattutto nei Balcani, creando forti tensioni.
+      </p>
+
+      <hr>
+
+      <h2 id="imperialismo">Imperialismo</h2>
+      <p>
+        Le grandi potenze europee erano in competizione per il controllo di colonie
+        e territori extraeuropei. Questa rivalità aumentò i conflitti politici ed economici
+        tra gli Stati.
+      </p>
+
+      <hr>
+
+      <h2 id="armamenti">Corsa agli armamenti</h2>
+      <p>
+        All’inizio del Novecento gli Stati europei investirono enormemente
+        nel potenziamento degli eserciti e delle flotte militari.
+        Questo clima di preparazione alla guerra rese il conflitto quasi inevitabile.
+      </p>
+
+      <hr>
+
+      <h2 id="alleanze">Sistema di alleanze</h2>
+      <p>
+        L’Europa era divisa in due grandi blocchi:
+      </p>
+      <ul>
+        <li><strong>Triplice Intesa</strong>: Francia, Regno Unito, Russia</li>
+        <li><strong>Triplice Alleanza</strong>: Germania, Austria-Ungheria, Italia</li>
+      </ul>
+      <p>
+        Questo sistema fece sì che un conflitto locale si trasformasse rapidamente
+        in una guerra mondiale.
+      </p>
+
+      <hr>
+
+      <h2 id="scatenante">Evento scatenante</h2>
+      <p>
+        Il 28 giugno 1914 l’arciduca Francesco Ferdinando d’Austria fu assassinato
+        a Sarajevo. Questo evento fece esplodere le tensioni già esistenti
+        e portò allo scoppio della guerra.
+      </p>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Storia – Le cause della Prima Guerra Mondiale</p>
+  </footer>
+
+</body>
+</html>

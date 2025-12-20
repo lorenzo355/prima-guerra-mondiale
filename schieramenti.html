@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Schieramenti della Prima Guerra Mondiale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <style>
+    /* ===== BASE ===== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #eef1f4;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: #1f2a44;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 25%;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      color: #1f2a44;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #1b6d85;
+      font-weight: 600;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== CONTENUTO ===== */
+    .content {
+      width: 75%;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content h2 {
+      color: #1f2a44;
+      margin-top: 30px;
+    }
+
+    .content p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .content ul {
+      margin-left: 20px;
+    }
+
+    .content li {
+      margin-bottom: 8px;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    /* ===== BOX EVIDENZA ===== */
+    .highlight {
+      background-color: #f7f9fb;
+      border-left: 5px solid #1b6d85;
+      padding: 15px;
+      margin: 20px 0;
+      font-weight: 600;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar,
+      .content {
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Gli Schieramenti della Prima Guerra Mondiale</h1>
+    <p>Le alleanze militari durante il conflitto (1914-1918)</p>
+  </header>
+
+  <!-- CONTENUTO -->
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Indice</h3>
+      <ul>
+	    <li><a href="index.html">Home</a></li>
+        <li><a href="#introduzione">Introduzione</a></li>
+        <li><a href="#intesa">Triplice Intesa</a></li>
+        <li><a href="#imperi">Imperi Centrali</a></li>
+        <li><a href="#italia">Il ruolo dell’Italia</a></li>
+      </ul>
+    </aside>
+
+    <!-- TESTO -->
+    <main class="content">
+
+      <h2 id="introduzione">Introduzione</h2>
+      <p>
+        Durante la Prima Guerra Mondiale, le potenze europee si divisero in due
+        grandi schieramenti contrapposti. Questo sistema di alleanze trasformò
+        rapidamente un conflitto locale in una guerra su scala mondiale.
+      </p>
+
+      <hr>
+
+      <h2 id="intesa">La Triplice Intesa</h2>
+      <p>
+        La Triplice Intesa era formata inizialmente da:
+      </p>
+      <ul>
+        <li><strong>Francia</strong></li>
+        <li><strong>Regno Unito</strong></li>
+        <li><strong>Russia</strong></li>
+      </ul>
+      <p>
+        Nel corso della guerra si unirono anche altri Stati, tra cui:
+      </p>
+      <ul>
+        <li>Italia (dal 1915)</li>
+        <li>Stati Uniti (dal 1917)</li>
+      </ul>
+
+      <div class="highlight">
+        La Triplice Intesa vinse il conflitto nel 1918.
+      </div>
+
+      <hr>
+
+      <h2 id="imperi">Gli Imperi Centrali</h2>
+      <p>
+        Gli Imperi Centrali comprendevano:
+      </p>
+      <ul>
+        <li><strong>Germania</strong></li>
+        <li><strong>Austria-Ungheria</strong></li>
+        <li><strong>Impero Ottomano</strong></li>
+        <li>Bulgaria</li>
+      </ul>
+      <p>
+        Questi Stati combattevano soprattutto sul fronte orientale e occidentale,
+        ma subirono gravi sconfitte negli ultimi anni di guerra.
+      </p>
+
+      <hr>
+
+      <h2 id="italia">Il ruolo dell’Italia</h2>
+      <p>
+        L’Italia inizialmente faceva parte della Triplice Alleanza,
+        ma rimase neutrale nel 1914.
+      </p>
+      <p>
+        Nel 1915 entrò in guerra a fianco della Triplice Intesa,
+        dopo la firma del Patto di Londra, combattendo principalmente
+        contro l’Austria-Ungheria.
+      </p>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Storia – Gli schieramenti della Prima Guerra Mondiale</p>
+  </footer>
+
+</body>
+</html>
