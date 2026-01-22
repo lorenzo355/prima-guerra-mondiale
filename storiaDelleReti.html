@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcard – Prima Guerra Mondiale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ===== BASE ===== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #eef1f4;
+      color: #2c2c2c;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1f2a44;
+      color: white;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    /* ===== CONTAINER ===== */
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 PER RIGA */
+      gap: 30px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 230px;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* FRONTE */
+    .card-front {
+      background-color: #ffffff;
+      border-top: 6px solid #1b6d85;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    /* RETRO */
+    .card-back {
+      background-color: #1b6d85;
+      color: white;
+      transform: rotateY(180deg);
+      font-size: 16px;
+    }
+
+    .card-back a {
+      margin-top: 15px;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .card-back a:hover {
+      color: #d9edf7;
+    }
+
+    footer {
+      margin: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .cards-container {
+        grid-template-columns: 1fr; /* 1 per riga su telefono */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Flashcard – Prima Guerra Mondiale</h1>
+  <p>Clicca sulla carta per vedere la risposta e approfondire</p>
+</header>
+
+<section class="cards-container">
+
+  <!-- CARD 1 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        Quali furono le cause della Prima Guerra Mondiale?
+      </div>
+      <div class="card-face card-back">
+        Nazionalismo, imperialismo, corsa agli armamenti e sistema di alleanze.
+        <a href="cause.html">→ Spiegazione dettagliata</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        Qual è l’evento scatenante della guerra?
+      </div>
+      <div class="card-face card-back">
+        L’assassinio dell’arciduca Francesco Ferdinando (1914).
+        <a href="cause.html#scatenante">→ Approfondisci</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        Chi faceva parte della Triplice Intesa?
+      </div>
+      <div class="card-face card-back">
+        Francia, Regno Unito, Russia (poi Italia e USA).
+        <a href="schieramenti.html">→ Vedi schieramenti</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        Cos’è il Trattato di Versailles?
+      </div>
+      <div class="card-face card-back">
+        Trattato del 1919 che impose dure sanzioni alla Germania.
+        <a href="trattati.html#versailles">→ Spiegazione completa</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  Studio di storia – Prima Guerra Mondiale
+</footer>
+
+<script>
+  function flipCard(card) {
+    card.classList.toggle("flipped");
+  }
+</script>
+
+</body>
+</html>
