@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Flashcard – Prima Guerra Mondiale</title>
+  <title>Flashcard – Storia delle Reti Informatiche</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -34,7 +34,7 @@
     /* ===== CONTAINER ===== */
     .cards-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 PER RIGA */
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
       padding: 40px;
       max-width: 1000px;
@@ -72,7 +72,6 @@
       justify-content: center;
     }
 
-    /* FRONTE */
     .card-front {
       background-color: #ffffff;
       border-top: 6px solid #1b6d85;
@@ -80,7 +79,6 @@
       font-size: 18px;
     }
 
-    /* RETRO */
     .card-back {
       background-color: #1b6d85;
       color: white;
@@ -100,16 +98,51 @@
       color: #d9edf7;
     }
 
+    /* ===== FOOTER SEMPLIFICATO ===== */
     footer {
-      margin: 20px;
+      background-color: #1f2a44;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
       font-size: 14px;
-      color: #555;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #d9edf7;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer ul li {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #d9edf7;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 13px;
+      opacity: 0.8;
     }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       .cards-container {
-        grid-template-columns: 1fr; /* 1 per riga su telefono */
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -118,7 +151,7 @@
 <body>
 
 <header>
-  <h1>Flashcard – Prima Guerra Mondiale</h1>
+  <h1>Flashcard – Storia delle Reti Informatiche</h1>
   <p>Clicca sulla carta per vedere la risposta e approfondire</p>
 </header>
 
@@ -127,12 +160,10 @@
   <!-- CARD 1 -->
   <div class="card" onclick="flipCard(this)">
     <div class="card-inner">
-      <div class="card-face card-front">
-        Quali furono le cause della Prima Guerra Mondiale?
-      </div>
+      <div class="card-face card-front">Quando nasce Internet?</div>
       <div class="card-face card-back">
-        Nazionalismo, imperialismo, corsa agli armamenti e sistema di alleanze.
-        <a href="cause.html">→ Spiegazione dettagliata</a>
+        Internet nasce ufficialmente nel 1983 con l’adozione del protocollo TCP/IP.
+        <a href="https://it.wikipedia.org/wiki/Storia_di_Internet">→ Approfondisci</a>
       </div>
     </div>
   </div>
@@ -140,12 +171,10 @@
   <!-- CARD 2 -->
   <div class="card" onclick="flipCard(this)">
     <div class="card-inner">
-      <div class="card-face card-front">
-        Qual è l’evento scatenante della guerra?
-      </div>
+      <div class="card-face card-front">In cosa consiste il progetto ARPANET?</div>
       <div class="card-face card-back">
-        L’assassinio dell’arciduca Francesco Ferdinando (1914).
-        <a href="cause.html#scatenante">→ Approfondisci</a>
+        Progetto militare statunitense che collegava università e centri di ricerca.
+        <a href="https://it.wikipedia.org/wiki/ARPANET">→ Scopri di più</a>
       </div>
     </div>
   </div>
@@ -153,12 +182,10 @@
   <!-- CARD 3 -->
   <div class="card" onclick="flipCard(this)">
     <div class="card-inner">
-      <div class="card-face card-front">
-        Chi faceva parte della Triplice Intesa?
-      </div>
+      <div class="card-face card-front">Di cosa parla il modello teorico ISO/OSI e quando viene sviluppato?</div>
       <div class="card-face card-back">
-        Francia, Regno Unito, Russia (poi Italia e USA).
-        <a href="schieramenti.html">→ Vedi schieramenti</a>
+        Il modello ISO/OSI è uno standard teorico a 7 livelli per descrivere il funzionamento delle reti di comunicazione, sviluppato nel 1984.
+        <a href="https://it.wikipedia.org/wiki/OSI_(rete)">→ Approfondisci</a>
       </div>
     </div>
   </div>
@@ -166,20 +193,102 @@
   <!-- CARD 4 -->
   <div class="card" onclick="flipCard(this)">
     <div class="card-inner">
-      <div class="card-face card-front">
-        Cos’è il Trattato di Versailles?
-      </div>
+      <div class="card-face card-front">Di cosa parlano le tecnologie di connessione?</div>
       <div class="card-face card-back">
-        Trattato del 1919 che impose dure sanzioni alla Germania.
-        <a href="trattati.html#versailles">→ Spiegazione completa</a>
+        Le tecnologie di connessione descrivono come i dispositivi si collegano tra loro: LAN, WAN, Wi-Fi, fibra ottica, cavo Ethernet e reti mobili.
+        <a href="https://it.wikipedia.org/wiki/Rete_di_calcolatori">→ Scopri di più</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">Che cos’è il World Wide Web?</div>
+      <div class="card-face card-back">
+        Sistema di pagine ipertestuali creato da Tim Berners-Lee nel 1989.
+        <a href="reti.html#www">→ Spiegazione completa</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">Di cosa parla l’URL?</div>
+      <div class="card-face card-back">
+        L’URL (Uniform Resource Locator) indica l’indirizzo di una risorsa su Internet, come un sito web o un file.
+        <a href="https://it.wikipedia.org/wiki/URL">→ Approfondisci</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 7 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">Che cos’è il linguaggio HTML?</div>
+      <div class="card-face card-back">
+        HTML (HyperText Markup Language) è il linguaggio di markup usato per creare pagine web e strutturare contenuti su Internet.
+        <a href="https://it.wikipedia.org/wiki/HTML">→ Approfondisci</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 8 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">Quando nasce il browser?</div>
+      <div class="card-face card-back">
+        Il primo browser nasce nel 1990 con WorldWideWeb di Tim Berners-Lee.
+        <a href="reti.html#browser-storia">→ Scopri di più</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 9 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">A cosa serve il browser?</div>
+      <div class="card-face card-back">
+        Serve per navigare su Internet e visualizzare siti e pagine web.
+        <a href="https://www.aranzulla.it/che-cose-il-browser-1029113.html?utm_source=chatgpt.com">→ Spiegazione completa</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 10 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">Quando nasce Facebook?</div>
+      <div class="card-face card-back">
+        Facebook nasce nel 2004, fondato da Mark Zuckerberg.
+        <a href="reti.html#facebook">→ Approfondisci</a>
       </div>
     </div>
   </div>
 
 </section>
 
+
+<!-- ===== FOOTER SEMPLIFICATO ===== -->
 <footer>
-  Studio di storia – Prima Guerra Mondiale
+  <h3>Flashcard – Storia delle Reti Informatiche</h3>
+
+  <ul>
+    <li>• Grillanda Lorenzo</li>
+    <li>• Conor Finn Long</li>
+    <li>• Davide Casadei</li>
+    <li>• Sofia Ravaglioli</li>
+  </ul>
+
+  <ul style="margin-top:10px;">
+    <li><a href="https://www.aranzulla.it">Aranzulla.it</a></li>
+    <li><a href="https://www.w3.org">W3C</a></li>
+  </ul>
+
+  <div class="footer-bottom">
+    © 2026 – Progetto di informatica • Uso didattico
+  </div>
 </footer>
 
 <script>
